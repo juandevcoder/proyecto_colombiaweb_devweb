@@ -199,6 +199,7 @@ header{
     gap: var(--sp-xs);
     grid-template-columns: repeat(4, 284px);
     grid-template-rows: repeat(2, 284px);
+    place-content: center;
 }
 
 .ferias__item{
@@ -291,7 +292,8 @@ header{
 
 .actualidad__images{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -314,13 +316,19 @@ header{
 footer{
     background-color: var(--secondary);
     padding: var(--sp-sm);
-
 }
 
 .navbar .menu_footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.text__footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--dark);
 }
 
 .menu__footer .menu__footer_link{
@@ -387,28 +395,26 @@ footer{
         grid-column: 2;
         grid-row: 3;
     }
-    
-}
 
-/* REGIONES */
+    /* REGIONES */
 
-.regiones__images{
-    display: grid;
-    column-gap: var(--sp-md);
-    row-gap: var(--sp-xxl);
-    margin-bottom: var(--sp-xxl);
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 327px);
-    
-}
+    .regiones__images{
+        display: grid;
+        column-gap: var(--sp-md);
+        row-gap: var(--sp-xxl);
+        margin-bottom: var(--sp-xxl);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 327px); 
+    }
 
-/* ACTUALIDAD */
+    /* ACTUALIDAD */
 
-.actualidad__images{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    .actualidad__images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -463,18 +469,16 @@ footer{
         grid-column: 2;
         grid-row: 4;
     }
-    
+
+    /* ACTUALIDAD */
+
+    .actualidad__images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
-
-/* ACTUALIDAD */
-
-.actualidad__images{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
 
 @media screen and (max-width: 760px) { 
     .navbar{
