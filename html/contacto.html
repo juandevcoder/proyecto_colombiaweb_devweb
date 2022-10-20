@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia - Home</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body id="top">
+    <header>
+        <nav class="navbar container">
+            <a class="navbar__link" href="./index.html">
+                <img src="../img/logo_header.png" alt="logo de colombia">          
+            </a>
+            <svg class="hamburguer" xmlns="http://www.w3.org/2000/svg" width="60" height="60" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><rect width="18" height="2" x="3" y="11" fill="#fefefe" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" fill="#fefefe" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" fill="#fefefe" rx=".95" ry=".95"/></svg>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="./historia.html">Historia</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./fiestas.html">Ferias</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./regiones.html">Regiones</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./actualidad.html">Actualidad</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contacto" class="bgr-primary">
+            <div class="container">
+                <h1 class="contacto__title">Contactenos</h1>
+                <h4 class="contacto__highlight">Mantente en contacto, diligencialo para resolver tus dudas</h4>
+                <form>
+                    <div class="row mb-3">
+                    <label for="inputname" class="col-sm-2 col-form-label contacto__text">Nombre</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputname" placeholder="Escribe tu nombre y apellido">
+                    </div>
+                    </div>
+                    <div class="row mb-3">
+                    <label for="inputemail" class="col-sm-2 col-form-label contacto__text">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputemail" placeholder="Escribe tu correo electrónico">
+                    </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputphone" class="col-sm-2 col-form-label contacto__text">Telefono</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="inputphone" placeholder="Escribe tu telefono o celular">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputsubject" class="col-sm-2 col-form-label contacto__text">Asunto</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputsibject" placeholder="Indica porque nos contactas">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputmessage" class="col-sm-2 col-form-label contacto__text">Mensaje</label>
+                        <div class="col-sm-10">
+                            <textarea type="text" class="form-control" id="message1" placeholder="Indica el detalle ..." rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-10 offset-sm-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inputcheck">
+                            <label class="form-check-label contacto__text" for="inputcheck">
+                            Acepto politica de tratamiento de datos personales
+                            </label>
+                        </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-outline-secondary btn-lg">Enviar Formulario</button>
+                </form>
+            </div>
+            
+            <!-- <form class="mb-3">
+                <label for="nombre1" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre1" placeholder="Escribe tu nombre y apellido">
+                <label for="correo1" class="form-label">Email address:</label>
+                <input type="email" class="form-control" id="correo1" placeholder="Escribe tu correo electrónico">
+                <label for="telefono1" class="form-label">Telefono:</label>
+                <input type="number" class="form-control" id="telefono1" placeholder="Escribe tu telefono o celular">
+                <label for="subject1" class="form-label">Asunto:</label>
+                <input type="text" class="form-control" id="telefono1" placeholder="Indica porque nos contactas">
+                <label for="message1" class="form-label">Mensaje:</label>
+                <textarea type="text" class="form-control" id="message1" placeholder="Indica el detalle ..." rows="5"></textarea>
+            </form> -->
+        </section>
+    </main>
+    <footer>
+        <nav class="navbar">
+            <a class="navbar__link" href="./index.html"><img src="../img/logo_footer.png" alt="logo de colombia">
+            </a>
+            <div class="text__footer">
+                <p class="text__footer__p">&copy; Todos los derechos reservados</p>
+                <p class="text__footer__p">Made with &#x1F913 by juandevcoder</p> 
+            </div>
+            <ul class="menu__footer">
+                <li class="menu__footer_item">
+                    <a class="menu__footer__link" href="./contacto.html">Contactenos</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>
